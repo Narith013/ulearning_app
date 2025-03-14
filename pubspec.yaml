@@ -19,6 +19,7 @@ dependencies:
   dots_indicator:
   intl:
   cloud_firestore:
+  firebase_auth: ^5.5.1
 
 dev_dependencies:
   flutter_test:
