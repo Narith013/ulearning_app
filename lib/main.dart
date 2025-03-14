@@ -7,6 +7,8 @@ import 'package:ulearning_app/pages/sing_in/sign_in.dart';
 import 'package:ulearning_app/pages/welcome/bloc/welcome_blocs.dart';
 import 'package:ulearning_app/pages/welcome/welcome.dart';
 
+import 'common/values/colors.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -31,7 +33,9 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           appBarTheme: AppBarTheme(
+            surfaceTintColor: AppColors.primaryBackground,
             elevation: 0,
+            // color: Colors.white,
             backgroundColor: Colors.white
           ),
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
