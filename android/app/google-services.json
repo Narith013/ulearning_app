@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "22436179155",
-    "project_id": "learning-app-71185",
-    "storage_bucket": "learning-app-71185.firebasestorage.app"
+    "project_number": "503112804518",
+    "project_id": "ulearning-e6f7e",
+    "storage_bucket": "ulearning-e6f7e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:22436179155:android:ce6a4f1faa603f9611f826",
+        "mobilesdk_app_id": "1:503112804518:android:4ec8034816c62f5987ec67",
         "android_client_info": {
           "package_name": "com.rithtech.ulearning_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAjQfdrQQ5uzQxrcyJZOvmGFxPXUIgvx-w"
+          "current_key": "AIzaSyCszz2GWlXziuSauksS3Ml6oNOFitkEHYg"
         }
       ],
       "services": {

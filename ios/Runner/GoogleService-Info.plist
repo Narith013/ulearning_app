@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCiX3NJ-JSQ1HCi3Mn37LnSvOvAyiaRY1Q</string>
+	<string>AIzaSyCBwjsrcrKDIIGSrpI61eKwdaUudDmv8as</string>
 	<key>GCM_SENDER_ID</key>
-	<string>22436179155</string>
+	<string>503112804518</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.rithtech.ulearningApp</string>
 	<key>PROJECT_ID</key>
-	<string>learning-app-71185</string>
+	<string>ulearning-e6f7e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>learning-app-71185.firebasestorage.app</string>
+	<string>ulearning-e6f7e.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:22436179155:ios:cb9f3a49c4b1c06611f826</string>
+	<string>1:503112804518:ios:9646e80df0c5f34c87ec67</string>
 </dict>
 </plist>
