@@ -1,14 +1,15 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ulearning_app/main.dart';
+import 'package:ulearning_app/common/routes/routes.dart';
+import 'package:ulearning_app/common/values/constant.dart';
 import 'package:ulearning_app/pages/welcome/bloc/welcome_blocs.dart';
 import 'package:ulearning_app/pages/welcome/bloc/welcome_events.dart';
 import 'package:ulearning_app/pages/welcome/bloc/welcome_states.dart';
 
 import '../../common/values/colors.dart';
+import '../../global.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -64,7 +65,7 @@ class _WelcomeState extends State<Welcome> {
                   ],
                 ),
                 Positioned(
-                    bottom: 100.h,
+                    bottom: 80.h,
                     child: DotsIndicator(
                       position: state.page.toDouble(),
                       dotsCount: 3,
@@ -122,8 +123,9 @@ class _WelcomeState extends State<Welcome> {
             }
             // jump to a new page
             else{
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHomePage(title: 'Home page')));
-              Navigator.of(context).pushNamedAndRemoveUntil('signIn', (route) => false);
+              Global.storageService.setBool(AppConstant.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
+              // print("device is first open ${Global.storageService.getDeviceFirstOpen()}");
+              Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.SIGN_IN, (route) => false);
             }
           },
           child: Container(

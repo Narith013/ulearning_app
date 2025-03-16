@@ -59,7 +59,8 @@ Widget reusableText(String text) {
   );
 }
 
-Widget buildTextField(String hintText, String textType, String iconName) {
+Widget buildTextField(String hintText, String textType, String iconName,
+    void Function(String value)? fun) {
   return Container(
     width: 325.w,
     height: 50.h,
@@ -80,6 +81,7 @@ Widget buildTextField(String hintText, String textType, String iconName) {
           width: 270.w,
           height: 50.w,
           child: TextField(
+            onChanged: (value) => fun!(value),
             autocorrect: false,
             keyboardType: TextInputType.multiline,
             obscureText: textType == 'Password' ? true : false,
@@ -93,7 +95,9 @@ Widget buildTextField(String hintText, String textType, String iconName) {
                     borderSide: BorderSide(color: Colors.transparent)),
                 focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.transparent)),
-                hintStyle: TextStyle(color: AppColors.primarySecondaryElementText.withOpacity(0.5))),
+                hintStyle: TextStyle(
+                    color: AppColors.primarySecondaryElementText
+                        .withOpacity(0.5))),
             style: TextStyle(
                 color: AppColors.primaryText,
                 fontFamily: "Avenir",
@@ -125,9 +129,9 @@ Widget forgotPassword() {
   );
 }
 
-Widget buildLogInAndRegButton(String buttonName, String buttonType) {
+Widget buildLogInAndRegButton(String buttonName, String buttonType, void Function()? func) {
   return GestureDetector(
-    onTap: () {},
+    onTap: func,
     child: Container(
       margin: EdgeInsets.only(
           left: 25.w, right: 25.w, top: buttonType == 'login' ? 40.h : 20.h),
